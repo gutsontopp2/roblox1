@@ -1,3 +1,7 @@
 # file network date
 01_rare_answers.mp4 tiktok 2026-10-19
 06_af_rare_pull.mp4 tiktok 2026-10-19
+01_rare_answers.mp4 instagram 2026-10-20
+01_rare_answers.mp4 youtube 2026-10-20
+06_af_rare_pull.mp4 instagram 2026-10-20
+06_af_rare_pull.mp4 youtube 2026-10-20
