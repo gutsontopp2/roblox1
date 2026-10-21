@@ -4,6 +4,7 @@ import subprocess, os, sys, json
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import make as M  # reuse REG, run, SRC
+M.REG["h2"] = dict(x=120, y=40, w=1520, h=660, audio=True, ext="mp4")  # Roll an Anime lobby tour
 
 S = os.path.dirname(os.path.abspath(__file__))
 TMP = os.path.join(S, "tmp2"); OUT = os.path.join(S, "out2")
@@ -84,8 +85,9 @@ def build(v):
     M.run(["ffmpeg", "-y", "-v", "error", "-sseof", "-0.1", "-i", joined, "-frames:v", "1", "-update", "1", last])
     words = game.split(" ")
     title_lines = [[" ".join(words[:-1]), gcol], [words[-1], gcol2]] if len(words) > 1 else [[game, gcol]]
+    if v.get("endtitle"): title_lines = v["endtitle"]
     tp = os.path.join(TMP, name + "_endtitle.png"); text_png(title_lines, tp, size=170)
-    pp = os.path.join(TMP, name + "_endplay.png"); text_png([["PLAY NOW ON ROBLOX", "white"]], pp, size=70, rotate=-3)
+    pp = os.path.join(TMP, name + "_endplay.png"); text_png([[v.get("endsub", "PLAY NOW ON ROBLOX"), "white"]], pp, size=70, rotate=-3)
     M.run(["ffmpeg", "-y", "-v", "error", "-loop", "1", "-framerate", "30", "-t", "2", "-i", last,
            "-loop", "1", "-framerate", "30", "-t", "2", "-i", tp, "-loop", "1", "-framerate", "30", "-t", "2", "-i", pp,
            "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-filter_complex",
