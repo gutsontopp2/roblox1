@@ -1,0 +1,345 @@
+[
+ {
+  "name": "04_pov_first_answer",
+  "game": "KRILLION",
+  "segments": [
+   [
+    "c",
+    12.8,
+    16.8,
+    0.15
+   ],
+   [
+    "c",
+    22.8,
+    24.2,
+    0.06
+   ]
+  ],
+  "headlines": [
+   {
+    "lines": [
+     [
+      "POV: YOU TYPE",
+      "white"
+     ],
+     [
+      "THE OBVIOUS ANSWER",
+      "yellow"
+     ]
+    ],
+    "end": 2.6
+   },
+   {
+    "lines": [
+     [
+      "+13 POINTS",
+      "pink"
+     ],
+     [
+      "THAT'S IT",
+      "white"
+     ]
+    ],
+    "start": 2.6,
+    "end": 4.0
+   },
+   {
+    "lines": [
+     [
+      "THINK",
+      "white"
+     ],
+     [
+      "NICHE",
+      "cyan"
+     ]
+    ],
+    "start": 4.0
+   }
+  ]
+ },
+ {
+  "name": "05_top_3_divers",
+  "game": "KRILLION",
+  "segments": [
+   [
+    "a",
+    1.0,
+    7.8,
+    0.12
+   ],
+   [
+    "c",
+    12.6,
+    16.6,
+    0.12
+   ]
+  ],
+  "headlines": [
+   {
+    "lines": [
+     [
+      "TOP 3 DIVERS",
+      "cyan"
+     ],
+     [
+      "IN MY GAME",
+      "white"
+     ]
+    ],
+    "end": 3.5
+   },
+   {
+    "lines": [
+     [
+      "#1 DOVE",
+      "white"
+     ],
+     [
+      "5,170 METERS",
+      "yellow"
+     ]
+    ],
+    "start": 3.5,
+    "end": 6.8
+   },
+   {
+    "lines": [
+     [
+      "CAN YOU",
+      "white"
+     ],
+     [
+      "BEAT THEM?",
+      "pink"
+     ]
+    ],
+    "start": 6.8
+   }
+  ]
+ },
+ {
+  "name": "07_af_ryu_yuta",
+  "game": "ANIME FISHING",
+  "segments": [
+   [
+    "e",
+    1.0,
+    13.0,
+    0.12
+   ]
+  ],
+  "headlines": [
+   {
+    "lines": [
+     [
+      "EVERY SECRET",
+      "pink"
+     ],
+     [
+      "GETS A CUTSCENE",
+      "white"
+     ]
+    ],
+    "end": 4.0
+   },
+   {
+    "lines": [
+     [
+      "RYU",
+      "cyan"
+     ],
+     [
+      "X YUTA",
+      "pink"
+     ]
+    ],
+    "start": 4.0,
+    "end": 8.0
+   },
+   {
+    "lines": [
+     [
+      "WHO SHOULD",
+      "white"
+     ],
+     [
+      "I ADD NEXT?",
+      "yellow"
+     ]
+    ],
+    "start": 8.0
+   }
+  ]
+ },
+ {
+  "name": "08_af_lelouch",
+  "game": "ANIME FISHING",
+  "segments": [
+   [
+    "f",
+    2.0,
+    15.0,
+    0.12
+   ]
+  ],
+  "headlines": [
+   {
+    "lines": [
+     [
+      "WHEN YOU PULL",
+      "white"
+     ],
+     [
+      "LELOUCH",
+      "pink"
+     ]
+    ],
+    "end": 6.5
+   },
+   {
+    "lines": [
+     [
+      "SECRET UNIT",
+      "yellow"
+     ],
+     [
+      "CUTSCENE",
+      "cyan"
+     ]
+    ],
+    "start": 6.5,
+    "end": 10.0
+   },
+   {
+    "lines": [
+     [
+      "SHOULD EVERY SECRET",
+      "white"
+     ],
+     [
+      "GET ONE?",
+      "orange"
+     ]
+    ],
+    "start": 10.0
+   }
+  ]
+ },
+ {
+  "name": "09_af_remade",
+  "game": "ANIME FISHING",
+  "segments": [
+   [
+    "g",
+    0.0,
+    15.0,
+    0.06,
+    1.25
+   ]
+  ],
+  "headlines": [
+   {
+    "lines": [
+     [
+      "MY GAME GOT",
+      "white"
+     ],
+     [
+      "BAD REVIEWS",
+      "pink"
+     ]
+    ],
+    "end": 3.0
+   },
+   {
+    "lines": [
+     [
+      "I ALMOST",
+      "white"
+     ],
+     [
+      "GAVE UP",
+      "orange"
+     ]
+    ],
+    "start": 3.0,
+    "end": 5.5
+   },
+   {
+    "lines": [
+     [
+      "SO I REMADE",
+      "white"
+     ],
+     [
+      "EVERYTHING",
+      "yellow"
+     ]
+    ],
+    "start": 5.5,
+    "end": 9.0
+   },
+   {
+    "lines": [
+     [
+      "NEW MAP + BOSSES",
+      "cyan"
+     ],
+     [
+      "NEW UNITS",
+      "green"
+     ]
+    ],
+    "start": 9.0
+   }
+  ]
+ },
+ {
+  "name": "10_af_secret_or_rare",
+  "game": "ANIME FISHING",
+  "segments": [
+   [
+    "img1",
+    0,
+    3.5,
+    0.15
+   ],
+   [
+    "d",
+    12.6,
+    16.0,
+    0.12
+   ]
+  ],
+  "headlines": [
+   {
+    "lines": [
+     [
+      "SECRET",
+      "pink"
+     ],
+     [
+      "OR RARE?",
+      "cyan"
+     ]
+    ],
+    "end": 3.5
+   },
+   {
+    "lines": [
+     [
+      "WHICH ONE",
+      "white"
+     ],
+     [
+      "WOULD YOU KEEP?",
+      "yellow"
+     ]
+    ],
+    "start": 3.5
+   }
+  ]
+ }
+]
