@@ -1,0 +1,9 @@
+[{"name":"13_games_with_friends","handle":"@myok401",
+ "intro":[["sr",0.5,4.7,0.12]],
+ "cards":[
+  {"title":"ROLL AN ANIME","color":"pink","clips":[["sr",99.0,102.2,0.12],["sr",103.6,106.0,0.15]],
+   "stats":[["POPULARITY","BRAND NEW","green"],["DEVICES","MOBILE + PC","cyan"],["GENRE","ANIME RNG","pink"]]},
+  {"title":"ANIME FISHING","color":"yellow","clips":[["d",7.0,10.5,0.1,1.4],["d",12.6,15.9,0.15]],
+   "stats":[["POPULARITY","UNDERRATED+","green"],["DEVICES","MOBILE + PC","cyan"],["GENRE","ANIME FISHING","orange"]]},
+  {"title":"KRILLION","color":"cyan","clips":[["c",12.6,16.6,0.12],["c",22.8,24.2,0.08]],
+   "stats":[["POPULARITY","UNDERRATED+","green"],["DEVICES","MOBILE + PC","cyan"],["GENRE","TRIVIA","red"]]}]}]
