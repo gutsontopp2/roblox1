@@ -4,6 +4,8 @@ import subprocess, os, sys, json
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import make as M  # reuse REG, run, SRC
+M.REG["n1"] = dict(x=300, y=60, w=1350, h=950, audio=True, ext="mp4")
+M.REG["n2"] = dict(x=80, y=40, w=1760, h=1000, audio=True, ext="mp4")
 M.REG["h2"] = dict(x=120, y=40, w=1520, h=660, audio=True, ext="mp4")  # Roll an Anime lobby tour
 
 S = os.path.dirname(os.path.abspath(__file__))

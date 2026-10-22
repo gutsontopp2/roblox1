@@ -467,5 +467,172 @@
     "start": 10.7
    }
   ]
+ },
+ {
+  "name": "14_raa_auto_roll",
+  "game": "ROLL AN ANIME",
+  "tag": "RELEASING SOON",
+  "endsub": "RELEASING SOON",
+  "endtitle": [
+   [
+    "ROLL AN",
+    "pink"
+   ],
+   [
+    "ANIME",
+    "cyan"
+   ]
+  ],
+  "segments": [
+   [
+    "n1",
+    0.3,
+    3.3,
+    0.12
+   ],
+   [
+    "n1",
+    4.0,
+    9.5,
+    0.12,
+    1.5
+   ],
+   [
+    "n1",
+    13.0,
+    17.0,
+    0.15
+   ],
+   [
+    "n1",
+    17.5,
+    20.5,
+    0.1,
+    1.3
+   ]
+  ],
+  "headlines": [
+   {
+    "lines": [
+     [
+      "AUTO ROLL",
+      "cyan"
+     ],
+     [
+      "GOES CRAZY",
+      "pink"
+     ]
+    ],
+    "end": 3.0
+   },
+   {
+    "lines": [
+     [
+      "SO MANY",
+      "white"
+     ],
+     [
+      "ANIME UNITS",
+      "pink"
+     ]
+    ],
+    "start": 3.0,
+    "end": 6.7
+   },
+   {
+    "lines": [
+     [
+      "WHO DID",
+      "white"
+     ],
+     [
+      "I PULL?",
+      "yellow"
+     ]
+    ],
+    "start": 6.7,
+    "end": 9.8
+   },
+   {
+    "lines": [
+     [
+      "ROLL AN ANIME",
+      "pink"
+     ],
+     [
+      "RNG",
+      "cyan"
+     ]
+    ],
+    "start": 9.8
+   }
+  ]
+ },
+ {
+  "name": "15_kr_frozen_map",
+  "game": "KRILLION",
+  "segments": [
+   [
+    "n2",
+    0.2,
+    3.6,
+    0.12
+   ],
+   [
+    "n2",
+    3.6,
+    8.6,
+    0.1,
+    1.5
+   ],
+   [
+    "n2",
+    9.8,
+    13.3,
+    0.15
+   ]
+  ],
+  "headlines": [
+   {
+    "lines": [
+     [
+      "MY TRIVIA GAME",
+      "white"
+     ],
+     [
+      "GOT A NEW MAP",
+      "cyan"
+     ]
+    ],
+    "end": 3.4
+   },
+   {
+    "lines": [
+     [
+      "EXPLORE THE",
+      "white"
+     ],
+     [
+      "FROZEN WORLD",
+      "cyan"
+     ]
+    ],
+    "start": 3.4,
+    "end": 6.7
+   },
+   {
+    "lines": [
+     [
+      "PLAY WITH",
+      "white"
+     ],
+     [
+      "UP TO 6 FRIENDS",
+      "yellow"
+     ]
+    ],
+    "start": 6.7
+   }
+  ]
  }
 ]
