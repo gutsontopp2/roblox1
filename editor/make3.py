@@ -60,7 +60,7 @@ def build(cfg):
     joined = os.path.join(TMP, name + "_j.mp4")
     M.run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", joined])
     # outro card (black, handle)
-    outro = os.path.join(TMP, name + "_outro.mp4"); od = 2.5
+    outro = os.path.join(TMP, name + "_outro.mp4"); od = cfg.get("outro", 2.5)
     hp = os.path.join(TMP, name + "_follow.png"); render([[("FOLLOW FOR", "white")], [("MORE GAMES", "cyan")]], hp, size=120)
     hh = os.path.join(TMP, name + "_handle.png"); render([[(cfg["handle"], "white")]], hh, size=70)
     M.run(["ffmpeg", "-y", "-v", "error", "-f", "lavfi", "-i", f"color=c=black:s=1080x1920:r=30:d={od}",
@@ -119,15 +119,19 @@ def build(cfg):
                 canvas.alpha_composite(im, (max(0, X), max(0, Y))) if X >= 0 and Y >= 0 else canvas.paste(im, (X, Y), im)
             yield canvas.tobytes()
     # audio: beat + game (quiet) + sfx
-    bp = os.path.join(TMP, name + "_beat.wav"); beat(bp, total)
-    base = 2; ins += ["-i", bp]
-    fc.append(f"[0:a]volume=0.25[g];[{base}:a]afade=out:st={total-0.8}:d=0.8[bt]"); mix = "[g][bt]"; nin = 2
-    SFX = os.path.join(S, "sfx"); ev = [("whoosh", max(0, c - 0.16), 0.6) for c in cuts[:-1]]
-    ev += [("pop", p, 0.5) for p in pops] + [("boom", b, 0.7) for b in booms] + [("whoosh", body - 0.16, 0.6), ("boom", body, 0.8)]
-    for e, (snd, at, vol) in enumerate(ev):
-        ins += ["-i", os.path.join(SFX, snd + ".wav")]; ms = int(at * 1000)
-        fc.append(f"[{base+1+e}:a]volume={vol},adelay={ms}|{ms}[e{e}]"); mix += f"[e{e}]"; nin += 1
-    fc.append(f"{mix}amix=inputs={nin}:normalize=0:duration=longest,alimiter=limit=0.95[aout]")
+    if cfg.get("audio"):
+        ins += ["-i", os.path.join(S, cfg["audio"])]
+        fc.append(f"[2:a]atrim=0:{total},asetpts=PTS-STARTPTS,aresample=44100,aformat=channel_layouts=stereo[aout]")
+    else:
+      bp = os.path.join(TMP, name + "_beat.wav"); beat(bp, total)
+      base = 2; ins += ["-i", bp]
+      fc.append(f"[0:a]volume=0.25[g];[{base}:a]afade=out:st={total-0.8}:d=0.8[bt]"); mix = "[g][bt]"; nin = 2
+      SFX = os.path.join(S, "sfx"); ev = [("whoosh", max(0, c - 0.16), 0.6) for c in cuts[:-1]]
+      ev += [("pop", p, 0.5) for p in pops] + [("boom", b, 0.7) for b in booms] + [("whoosh", body - 0.16, 0.6), ("boom", body, 0.8)]
+      for e, (snd, at, vol) in enumerate(ev):
+          ins += ["-i", os.path.join(SFX, snd + ".wav")]; ms = int(at * 1000)
+          fc.append(f"[{base+1+e}:a]volume={vol},adelay={ms}|{ms}[e{e}]"); mix += f"[e{e}]"; nin += 1
+      fc.append(f"{mix}amix=inputs={nin}:normalize=0:duration=longest,alimiter=limit=0.95[aout]")
     out = os.path.join(OUT, name + ".mp4")
     cmd = ["ffmpeg", "-y", "-v", "error", *ins, "-filter_complex", ";".join(fc), "-map", "[vout]", "-map", "[aout]",
            "-t", str(total), "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-c:a", "aac", "-b:a", "160k",
