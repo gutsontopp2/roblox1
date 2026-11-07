@@ -32,3 +32,6 @@
 20_la_edit_out.mp4 tiktok 2026-11-07
 20_la_edit_out.mp4 instagram 2026-11-07
 20_la_edit_out.mp4 youtube 2026-11-07
+22_la_edit_rate.mp4 tiktok 2026-11-07
+22_la_edit_rate.mp4 instagram 2026-11-07
+22_la_edit_rate.mp4 youtube 2026-11-07
