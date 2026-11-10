@@ -78,3 +78,6 @@ pirate_token_promo.mp4 youtube 2026-11-07
 35_pirate_edit_wheel.mp4 instagram 2026-11-09
 35_pirate_edit_wheel.mp4 youtube 2026-11-09
 36_la_edit_winter_update.mp4 tiktok-metricool 2026-11-10
+36_la_edit_winter_update.mp4 tiktok 2026-11-10
+36_la_edit_winter_update.mp4 instagram 2026-11-10
+36_la_edit_winter_update.mp4 youtube 2026-11-10
